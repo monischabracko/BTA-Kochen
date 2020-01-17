@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header{
+    background-color: #fff;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem
+}
+
+  /*   1 rem entspricht ca 16px */
+
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#menu{
+    display: none;
+}
+
+#menu.show{
+    display: block;
+}
+
+#burger{border: none; background-color: #fff; cursor: pointer;}
+
+#intro{
+    background-image: url(img/intro.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text{
+    color: white;
+    text-align: center;
+    }
+
+.button{
+    background-color: white;
+    color: #374A67;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #374A67;
+    border-radius: 4px;
+    box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.5);
+    display: inline-block;
+    margin-top: 1rem;
+} 
+ 
+.card{
+    border: 1px solid lightgray;
+    box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+
+}
+
+@media (min-width: 800px){
+    #menu{
+        display: block;
+    }
+
+    #burger{
+        display: none;
+    }
+
+    .unterpunkte{
+        display: flex;
+    }
+
+    .unterpunkte li{
+        margin: 8px;
+    }
+}
+
